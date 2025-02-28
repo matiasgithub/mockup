@@ -3,6 +3,24 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<style>
+/* Logo alineado al extremo izquierdo dentro del header */
+.logo-left {
+    position: absolute;  /* Lo sacamos del flujo normal para posicionarlo en el extremo */
+    left: 0;             /* Lo alineamos al borde izquierdo del header */
+    top: 50%;            /* Lo centramos verticalmente */
+    transform: translateY(-50%);  /* Ajuste para centrarlo exactamente */
+    z-index: 9999;       /* Asegura que el logo esté por encima de otros elementos */
+    transition: width 0.3s ease, height 0.3s ease;  /* Transición suave para el tamaño del logo */
+}
+
+/* Esto asegura que la barra de navegación tenga un espacio adecuado */
+.navbar {
+    position: relative; /* Esto es necesario para que el logo pueda posicionarse relativo al navbar */
+    transition: height 0.3s ease, line-height 0.3s ease, background-color 0.3s ease;  /* Transición para el cambio de tamaño y color */
+}
+
+</style>
     <head>
 		<!-- BASICS -->
         <meta charset="utf-8">
@@ -26,30 +44,33 @@
     </head>
 	 
     <body>
-		<section id="header" class="appear"></section>
-		<div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
-			 <div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="fa fa-bars color-white"></span>
-					</button>
-					<h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px;">			
-					</a></h1>
+		<section id="header" class="appear">
+			<div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+				<!-- Aquí sacamos la imagen fuera de .container y la alineamos a la izquierda -->
+				<img src="img/logo/mockup-logo-blanco.png" alt="Logo" width="130" height="80" class="logo-left" />
+				
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="fa fa-bars color-white"></span>
+						</button>
+						<h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px;"></a></h1>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav" data-0="margin-top:20px;" data-100="margin-top:5px;">
+							<li class="active"><a href="#parallax1">INICIO</a></li>
+							<li><a href="#parallax2">EMPRESA</a></li>
+							<li><a href="#testimonials">SERVICIOS</a></li>
+							<li><a href="#section-proyectos">PROYECTOS</a></li>
+							<li><a href="#testimonials2">NORMAS</a></li>
+							<li><a href="#section-clientes">CLIENTES</a></li>
+							<li><a href="#section-contact">CONTACTOS</a></li>
+						</ul>
+					</div><!--/.navbar-collapse -->
 				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav" data-0="margin-top:20px;" data-100="margin-top:5px;">
-						<li class="active"><a href="#parallax1">INICIO</a></li>
-						<li><a href="#parallax2">EMPRESA</a></li>
-						<li><a href="#testimonials">SERVICIOS</a></li>
-						<li><a href="#section-proyectos">PROYECTOS</a></li>
-						<li><a href="#testimonials2">NORMAS</a></li>
-						<li><a href="#section-clientes">CLIENTES</a></li>
-						<li><a href="#section-contact">CONTACTOS</a></li>
-					</ul>
-				</div><!--/.navbar-collapse -->
 			</div>
-		</div>
-
+		</section>
+		
 		<section  id="parallax1" class="featured">
 			<div class="container"> 
 				<div class="row mar-bot40">
