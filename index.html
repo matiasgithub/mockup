@@ -2,613 +2,646 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <style>
-/* Logo alineado al extremo izquierdo dentro del header */
-.logo-left {
-    position: absolute;  /* Lo sacamos del flujo normal para posicionarlo en el extremo */
-    left: 0;             /* Lo alineamos al borde izquierdo del header */
-    top: 50%;            /* Lo centramos verticalmente */
-    transform: translateY(-50%);  /* Ajuste para centrarlo exactamente */
-    z-index: 9999;       /* Asegura que el logo esté por encima de otros elementos */
-    transition: width 0.3s ease, height 0.3s ease;  /* Transición suave para el tamaño del logo */
-}
+	/* Logo alineado al extremo izquierdo dentro del header */
+	.logo-left {
+		position: absolute;
+		/* Lo sacamos del flujo normal para posicionarlo en el extremo */
+		left: 60px;
+		/* Lo alineamos al borde izquierdo del header */
+		top: 50%;
+		/* Lo centramos verticalmente */
+		transform: translateY(-50%);
+		/* Ajuste para centrarlo exactamente */
+		z-index: 9999;
+		/* Asegura que el logo esté por encima de otros elementos */
+		transition: width 0.3s ease, height 0.3s ease;
+		/* Transición suave para el tamaño del logo */
+	}
 
-/* Esto asegura que la barra de navegación tenga un espacio adecuado */
-.navbar {
-    position: relative; /* Esto es necesario para que el logo pueda posicionarse relativo al navbar */
-    transition: height 0.3s ease, line-height 0.3s ease, background-color 0.3s ease;  /* Transición para el cambio de tamaño y color */
-}
+	/* Esto asegura que la barra de navegación tenga un espacio adecuado */
+	.navbar {
+		position: relative;
+		/* Esto es necesario para que el logo pueda posicionarse relativo al navbar */
+		transition: height 0.3s ease, line-height 0.3s ease, background-color 0.3s ease;
+		/* Transición para el cambio de tamaño y color */
+	}
 
+	.navbar-collapse {
+		padding-top: 20px;
+		/* Ajusta el valor para bajar el menú */
+	}
 </style>
-    <head>
-		<!-- BASICS -->
-        <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Amoeba free one page responsive bootstrap site template</title>
-        <meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />	
-		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/bootstrap-theme.css">
-        <link rel="stylesheet" href="css/style.css">
-		<!-- skin -->
-		<link rel="stylesheet" href="skin/default.css">
-        <!-- =======================================================
+
+<head>
+	<!-- BASICS -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Mockup - Ingeniería y servicios</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- skin -->
+	<link rel="stylesheet" href="skin/default.css">
+	<!-- =======================================================
             Theme Name: Amoeba
             Theme URL: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/
             Author: BootstrapMade
             Author URL: https://bootstrapmade.com
         ======================================================= -->
-    </head>
-	 
-    <body>
-		<section id="header" class="appear">
-			<div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
-				<!-- Aquí sacamos la imagen fuera de .container y la alineamos a la izquierda -->
-				<img src="img/logo/mockup-logo-blanco.png" alt="Logo" width="130" height="80" class="logo-left" />
-				
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="fa fa-bars color-white"></span>
-						</button>
-						<h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px;"></a></h1>
-					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav" data-0="margin-top:20px;" data-100="margin-top:5px;">
-							<li class="active"><a href="#parallax1">INICIO</a></li>
-							<li><a href="#parallax2">EMPRESA</a></li>
-							<li><a href="#testimonials">SERVICIOS</a></li>
-							<li><a href="#section-proyectos">PROYECTOS</a></li>
-							<li><a href="#testimonials2">NORMAS</a></li>
-							<li><a href="#section-clientes">CLIENTES</a></li>
-							<li><a href="#section-contact">CONTACTOS</a></li>
-						</ul>
-					</div><!--/.navbar-collapse -->
-				</div>
-			</div>
-		</section>
-		
-		<section  id="parallax1" class="featured">
-			<div class="container"> 
-				<div class="row mar-bot40">
-					<div class="col-md-6 col-md-offset-3">
-						
-						<div class="align-center">
-<p>
-							<h1 class="slogan">INGENIERIA Y SERVICIOS</h1>
-							<h4>
-							Ingenier&iacute;a B&aacute;sica, Conceptual y de Detalle.
-							C&aacute;lculo, dise&ntilde;o y desarrollo de proyectos llave en mano.
-							Estudios y an&aacute;lisis de proyectos y obras.
-							Asesoramiento y Soluciones constructivas.
- 
-				
-							</h4>	
-</p|>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		
-		<section  id="parallax2" class="featured">
-			<div class="container"> 
-				<div class="row mar-bot40">
-					<div class="col-md-6 col-md-offset-3">
-						
-						<div class="align-center">
-						<p>
-							<h1 class="slogan">EMPRESA</h1>
-						<h4> 
-						Patagonia ingenier&iacute;a es una empresa joven dirigida por profesionales con 
-						amplia experiencia en el rubro privado del oil & gas, que provee de servicios 
-						de ingenier&iacute;a, inspecci&oacute;n y gerenciamiento de obra a la industria, otorgando 
-						soluciones acorde a las necesidades de cada cliente, evaluando cada caso y 
-						definiendo la mejor opci&oacute;n para llevar a cabo su proyecto con excelencia, 
-						cumpliendo con las normativas internacionales sumado a la optimizaci&oacute;n de sus 
-						recursos humanos y materiales en una acci&oacute;n constante. Esto permite desarrollar 
-						estrategias de calidad que brindan m&aacute;xima satisfacci&oacute;n a sus clientes buscando 
-						lograr un fuerte posicionamiento en el mercado.
-				
-							</h4>
+</head>
 
-					</div>
-					</div>
-				</div>
-			</div>
-		</section>
-			
-		<!-- spacer section:testimonial -->
-		<section  id="testimonials" class="featured">
-			<div class="container"> 
-				<div class="row mar-bot40">
-					<div class="col-md-6 col-md-offset-3">
-						
-						<div class="align-center">
-<p>
-								<h1 class="slogan">SERVICIOS</h1>
-						<h4> 
-						Nuestra filosof&iacute;a se basa en la calidad del producto / servicio, 
-						el mejoramiento constante y el compromiso de brindar las mejores 
-						prestaciones para nuestros clientes.
-						Especializaciones:
-						Procesos.
-						Ca&ntilde;er&iacute;as (Piping).
-						Civil & Estructuras.
-						Instrumentaci&oacute;n y Control.
-						Electricidad.
-						Mec&aacute;nica & Equipos.
-						Planificaci&oacute;n.
-						Evaluaci&oacute;n de Proyectos.
-						Higiene y Seguridad.
-						</h4>
-</p|>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-			
-		<!-- about -->
-		<section id="section-proyectos" class="section appear clearfix">
+<body>
+	<section id="header" class="appear">
+		<div class="navbar navbar-fixed-top" role="navigation"
+			data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);"
+			data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+			<!-- Aquí sacamos la imagen fuera de .container y la alineamos a la izquierda -->
+			<img src="img/logo/mockup-logo-blanco.png" alt="Logo" width="130" height="80" class="logo-left" />
+
 			<div class="container">
-				
-				<div class="row mar-bot40">
-					<div class="col-md-offset-3 col-md-6">
-<p>
-						<div class="section-header">
-							<h1 class="section-heading animated" data-animation="bounceInUp">PROYECTO</h1>
-							<p>ENTRE NUESTROS PROYECTOS SE ENCUENTRAN.</p>
-						</div>
-</p>
-					</div>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="fa fa-bars color-white"></span>
+					</button>
+					<h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;"
+							data-300="line-height:50px;"></a></h1>
 				</div>
-					
-                         <div class="col-md-12">
-                            <div class="row">
-                              <div class="portfolio-items isotopeWrapper clearfix" id="3">
-							  
-                                <article class="col-md-4 isotopeItem webdesign">
-									<div class="portfolio-item">
-										<figure class="member-photo"><img src="img/portfolio/CALCULO DE ANDAMIOS.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-<a href="img/portfolio/CALCULO DE ANDAMIOS.jpg" class="fancybox">
-											<div class="folio-info">
-											
-									<div class="team-detail">
-									<h4>CALCULO DE ANDAMIOS.</h4>
-<i class="fa fa-plus fa-2x"></i>
-	
-												 </div>										   
-										 </div></a>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem photography">
-									<div class="portfolio-item">
-										<figure class="member-photo"><img src="img/portfolio/CALENTADOR DE FUEGO INDIRECTO.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-<a href="img/portfolio/CALENTADOR DE FUEGO INDIRECTO.jpg" class="fancybox">
-											<div class="folio-info">
-												<h4>CALENTADOR DE FUEGO INDIRECTO.</h4>
-												<i class="fa fa-plus fa-2x"></i>
-											 </div>										   
-										 </div></a>
-									</div>
-                                </article>
-								
-
-                                <article class="col-md-4 isotopeItem photography">
-									<div class="portfolio-item">
-										<figure class="member-photo"><img src="img/portfolio/FILTRO DE GAS COMBUSTIBLE.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-<a href="img/portfolio/FILTRO DE GAS COMBUSTIBLE.jpg" class="fancybox">
-											<div class="folio-info">
-												<h4>FILTRO DE GAS COMBUSTIBLE.</h4>
-												<i class="fa fa-plus fa-2x"></i>
-											 </div>										   
-										 </div></a>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem print"></br>
-									<div class="portfolio-item">
-										<figure class="member-photo"><img src="img/portfolio/PIPING ALTA PRESION YACIMIENTO BARRANCAS.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-<a href="img/portfolio/PIPING ALTA PRESION YACIMIENTO BARRANCAS.jpg" class="fancybox">
-											<div class="folio-info">
-												<h4>PIPING ALTA PRESION YACIMIENTO BARRANCAS.</h4>
-												<i class="fa fa-plus fa-2x"></i>
-											 </div>										   
-										 </div></a>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem photography">
-									<div class="portfolio-item">
-										<figure class="member-photo"><img src="img/portfolio/PIPING TANQUE 1.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-<a href="img/portfolio/PIPING TANQUE 1.jpg" class="fancybox">
-											<div class="folio-info">
-												<h4>PIPING TANQUE 1.</h4>
-												<i class="fa fa-plus fa-2x"></i>
-											 </div>										   
-										 </div></a>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem webdesign">
-									<div class="portfolio-item">
-										<figure class="member-photo"><img src="img/portfolio/PIPING TANQUE 2.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-<a href="img/portfolio/PIPING TANQUE 2.jpg" class="fancybox">
-											<div class="folio-info">
-												<h4>PIPING TANQUE 2.</h4>
-												<i class="fa fa-plus fa-2x"></i>
-											 </div>										   
-										 </div></a>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem print">
-									<div class="portfolio-item">
-										<figure class="member-photo"><img src="img/portfolio/PULMON DE AIRE ASME.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-<a href="img/portfolio/PULMON DE AIRE ASME.jpg" class="fancybox">
-											<div class="folio-info">
-												<h4>PULMON DE AIRE ASME.</h4>
-												<i class="fa fa-plus fa-2x"></i>
-											 </div>										   
-										 </div></a>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem photography">
-									<div class="portfolio-item">
-										<figure class="member-photo"><img src="img/portfolio/REACTOR FAME.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-<a href="img/portfolio/REACTOR FAME.jpg" class="fancybox">
-											<div class="folio-info">
-												<h4>REACTOR FAME.</h4>
-												<i class="fa fa-plus fa-2x"></i>
-											 </div>										   
-										 </div></a>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem print">
-									<div class="portfolio-item">
-										<figure class="member-photo"><img src="img/portfolio/SISTEMA CONTRA INCENDIO TANQUE.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-<a href="img/portfolio/SISTEMA CONTRA INCENDIO TANQUE.jpg" class="fancybox">
-											<div class="folio-info">
-												<h4>SISTEMA CONTRA INCENDIO TANQUE.</h4>
-												<i class="fa fa-plus fa-2x"></i>
-											 </div>										   
-										 </div></a>
-									</div>
-                                </article>
-                                </div>
-                                        
-							</div>
-                                     
-
-						</div>
-                        		</div>
-				
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav" data-0="margin-top:20px;" data-100="margin-top:5px;">
+						<li class="active"><a href="#parallax1">INICIO</a></li>
+						<li><a href="#parallax2">EMPRESA</a></li>
+						<li><a href="#testimonials">SERVICIOS</a></li>
+						<li><a href="#section-proyectos">PROYECTOS</a></li>
+						<li><a href="#testimonials2">NORMAS</a></li>
+						<li><a href="#section-clientes">CLIENTES</a></li>
+						<li><a href="#section-contact">CONTACTOS</a></li>
+					</ul>
+				</div><!--/.navbar-collapse -->
 			</div>
-
-
+		</div>
 	</section>
 
-		<!-- /about -->
-		
-		<!-- spacer section:stats -->
-		<section id="testimonials2" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
+	<section id="parallax1" class="featured">
 		<div class="container">
+			<div class="row mar-bot40">
+				<div class="col-md-6 col-md-offset-3">
 
-				<div class="row mar-bot40">
-					<div class="col-md-offset-3 col-md-6">
-						<div class="section-header">
-<p>
-							<h1 class="section-heading animated" data-animation="bounceInUp">NORMAS</h1>
-</p>
-													</div>
+					<div class="align-center">
+						<h1 style="text-shadow: none;">INGENIERIA Y SERVICIOS</h1>
+						<h4>
+							Ingenier&iacute;a B&aacute;sica, Conceptual y de Detalle.
+							C&aacute;lculo, dise&ntilde;o y desarrollo de proyectos llave en mano.
+							Estudios y an&aacute;lisis de <span
+								style="margin-left: 22px; display: inline-block;">proyectos y obras.
+								Asesoramiento y Soluciones constructivas.</span>
+						</h4>
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
 
-					<div class="row align-center mar-bot40">
-						<div class="col-md-3">
-							<div class="team-member">
-								<figure class="member-photo"><img src="img/team/logo_api.jpg" alt="" /></figure>
-								<div class="team-detail">
-									<h4>API es la principal asociaci&oacute;n comercial de los EE. UU., representando cerca de 400 corporaciones implicadas en la producci&oacute;n, el refinamiento, la distribuci&oacute;n, y muchos otros aspectos de la industria del petr&oacute;leo y del gas natural.</h4>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="team-member">
-								<figure class="member-photo"><img src="img/team/logo_asme.jpg" alt="" /></figure>
-								<div class="team-detail">
-									<h4>ASME (American Society of Mechanical Engineers - Sociedad Americana de Ingenieros Mec&aacute;nicos). Es una asociaci&oacute;n profesional, que adem&aacute;s ha generado un c&oacute;digo de dise&ntilde;o, construcci&oacute;n, inspecci&oacute;n y pruebas para equipos. Entre otros, calderas y recipientes a presi&oacute;n. Este c&oacute;digo tiene aceptaci&oacute;n mundial y es usado en todo el mundo. </h4>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="team-member">
-								<figure class="member-photo"><img src="img/team/logo_tema.jpg" alt="" /></figure>
-								<div class="team-detail">
-								<h4>TEMA (The Tubular Exchanger Manufacturers Association) ha alcanzado la aceptaci&oacute;n mundial como la autoridad en dise&ntilde;o mec&aacute;nico del intercambiador de calor de coraza y tubos.</h4>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="team-member">
-							<figure class="member-photo">	<img src="img/team/logo_nfpa" alt="" /></figure>
 
-								<div class="team-detail">
-								<h4>El sistema de desarrollo de los c&oacute;digos y normas de la NFPA es un proceso abierto basado en el consenso que ha producido algunos de los m&aacute;s referenciados materiales en la industria de la protecci&oacute;n contra incendios, incluyendo el C&oacute;digo El&eacute;ctrico Nacional, el C&oacute;digo de Seguridad Humana, el C&oacute;digo Uniforme contra Incendios, y el C&oacute;digo Nacional de Alarmas de Incendios</h4>
+	<section id="parallax2" class="featured">
+		<div class="container">
+			<div class="row mar-bot40">
+				<div class="col-md-6 col-md-offset-3">
+
+					<div class="align-center">
+						<p>
+						<h1 class="slogan">EMPRESA</h1>
+						<h4>
+							Mockup ingenier&iacute;a es una empresa joven dirigida por profesionales con
+							amplia experiencia en el rubro privado del oil & gas, que provee de servicios
+							de ingenier&iacute;a, inspecci&oacute;n y gerenciamiento de obra a la industria, otorgando
+							soluciones acorde a las necesidades de cada cliente, evaluando cada caso y
+							definiendo la mejor opci&oacute;n para llevar a cabo su proyecto con excelencia,
+							cumpliendo con las normativas internacionales sumado a la optimizaci&oacute;n de sus
+							recursos humanos y materiales en una acci&oacute;n constante. Esto permite desarrollar
+							estrategias de calidad que brindan m&aacute;xima satisfacci&oacute;n a sus clientes buscando
+							lograr un fuerte posicionamiento en el mercado.
+
+						</h4>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- spacer section:testimonial -->
+	<section id="testimonials" class="featured">
+		<div class="container">
+			<div class="row mar-bot40">
+				<div class="col-md-6 col-md-offset-3">
+
+					<div class="align-center">
+						<p>
+						<h1 class="slogan">SERVICIOS</h1>
+						<h4 class="servicios">
+							Nuestra filosof&iacute;a se basa en la calidad del producto / servicio,
+							el mejoramiento constante y el compromiso de brindar las mejores
+							prestaciones para nuestros clientes.
+							Especializaciones:
+							Procesos.
+							Ca&ntilde;er&iacute;as (Piping).
+							Civil & Estructuras.
+							Instrumentaci&oacute;n y Control.
+							Electricidad.
+							Mec&aacute;nica & Equipos.
+							Planificaci&oacute;n.
+							Evaluaci&oacute;n de Proyectos.
+							Higiene y Seguridad.
+						</h4>
+						</p|>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- fotos proyectos -->
+	<section id="section-proyectos" class="section appear clearfix">
+		<div class="container">
+			<div class="row mar-bot40">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="section-header text-center">
+						<h1 class="section-heading animated" data-animation="bounceInUp">PROYECTOS</h1>
+						<p>ENTRE NUESTROS PROYECTOS SE ENCUENTRAN.</p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="row">
+				<div class="portfolio-items isotopeWrapper clearfix">
+					
+					<article class="col-md-4 isotopeItem">
+						<div class="portfolio-item">
+							<figure class="member-photo">
+								<img src="img/portfolio/CALCULO DE ANDAMIOS.jpg" alt="" class="img-fluid" />
+								<div class="portfolio-desc align-center">
+									<a href="img/portfolio/CALCULO DE ANDAMIOS.jpg" class="fancybox">
+										<div class="folio-info">
+											<h4>CALCULO DE ANDAMIOS</h4>
+											<i class="fa fa-plus fa-2x"></i>
+										</div>
+									</a>
 								</div>
-							</div>
+							</figure>
 						</div>
-						<div class="col-md-3">
-							<div class="team-member">
-								<figure class="member-photo"><img src="img/team/logo_iram.jpg" alt="" /></figure>
-								<div class="team-detail">
-								<h4>IRAM lidera los comit&eacute;s t&eacute;cnicos nacionales que analizan los documentos en estudio, canaliza las propuestas nacionales, fija la posici&oacute;n de Argentina ante estos organismos y est&aacute; presente en la conducci&oacute;n de varios de los comit&eacute;s t&eacute;cnicos internacionales</h4>
+					</article>
+					
+					<article class="col-md-4 isotopeItem">
+						<div class="portfolio-item">
+							<figure class="member-photo">
+								<img src="img/portfolio/CALENTADOR DE FUEGO INDIRECTO.jpg" alt="" class="img-fluid" />
+								<div class="portfolio-desc align-center">
+									<a href="img/portfolio/CALENTADOR DE FUEGO INDIRECTO.jpg" class="fancybox">
+										<div class="folio-info">
+											<h4>CALENTADOR DE FUEGO INDIRECTO</h4>
+											<i class="fa fa-plus fa-2x"></i>
+										</div>
+									</a>
 								</div>
-							</div>
+							</figure>
+						</div>
+					</article>
+					
+					<article class="col-md-4 isotopeItem">
+						<div class="portfolio-item">
+							<figure class="member-photo">
+								<img src="img/portfolio/FILTRO DE GAS COMBUSTIBLE.jpg" alt="" class="img-fluid" />
+								<div class="portfolio-desc align-center">
+									<a href="img/portfolio/FILTRO DE GAS COMBUSTIBLE.jpg" class="fancybox">
+										<div class="folio-info">
+											<h4>FILTRO DE GAS COMBUSTIBLE</h4>
+											<i class="fa fa-plus fa-2x"></i>
+										</div>
+									</a>
+								</div>
+							</figure>
+						</div>
+					</article>
+					
+					<article class="col-md-4 isotopeItem">
+						<div class="portfolio-item">
+							<figure class="member-photo">
+								<img src="img/portfolio/PIPING ALTA PRESION YACIMIENTO BARRANCAS.jpg" alt="" class="img-fluid" />
+								<div class="portfolio-desc align-center">
+									<a href="img/portfolio/PIPING ALTA PRESION YACIMIENTO BARRANCAS.jpg" class="fancybox">
+										<div class="folio-info">
+											<h4>PIPING ALTA PRESION YACIMIENTO BARRANCAS</h4>
+											<i class="fa fa-plus fa-2x"></i>
+										</div>
+									</a>
+								</div>
+							</figure>
+						</div>
+					</article>
+					
+					<article class="col-md-4 isotopeItem">
+						<div class="portfolio-item">
+							<figure class="member-photo">
+								<img src="img/portfolio/PIPING TANQUE 1.jpg" alt="" class="img-fluid" />
+								<div class="portfolio-desc align-center">
+									<a href="img/portfolio/PIPING TANQUE 1.jpg" class="fancybox">
+										<div class="folio-info">
+											<h4>PIPING TANQUE 1</h4>
+											<i class="fa fa-plus fa-2x"></i>
+										</div>
+									</a>
+								</div>
+							</figure>
+						</div>
+					</article>
+					
+					<article class="col-md-4 isotopeItem">
+						<div class="portfolio-item">
+							<figure class="member-photo">
+								<img src="img/portfolio/PIPING TANQUE 2.jpg" alt="" class="img-fluid" />
+								<div class="portfolio-desc align-center">
+									<a href="img/portfolio/PIPING TANQUE 2.jpg" class="fancybox">
+										<div class="folio-info">
+											<h4>PIPING TANQUE 2</h4>
+											<i class="fa fa-plus fa-2x"></i>
+										</div>
+									</a>
+								</div>
+							</figure>
+						</div>
+					</article>
+					
+					<article class="col-md-4 isotopeItem">
+						<div class="portfolio-item">
+							<figure class="member-photo">
+								<img src="img/portfolio/PULMON DE AIRE ASME.jpg" alt="" class="img-fluid" />
+								<div class="portfolio-desc align-center">
+									<a href="img/portfolio/PULMON DE AIRE ASME.jpg" class="fancybox">
+										<div class="folio-info">
+											<h4>PULMON DE AIRE ASME</h4>
+											<i class="fa fa-plus fa-2x"></i>
+										</div>
+									</a>
+								</div>
+							</figure>
+						</div>
+					</article>
+					
+					<article class="col-md-4 isotopeItem">
+						<div class="portfolio-item">
+							<figure class="member-photo">
+								<img src="img/portfolio/REACTOR FAME.jpg" alt="" class="img-fluid" />
+								<div class="portfolio-desc align-center">
+									<a href="img/portfolio/REACTOR FAME.jpg" class="fancybox">
+										<div class="folio-info">
+											<h4>REACTOR FAME</h4>
+											<i class="fa fa-plus fa-2x"></i>
+										</div>
+									</a>
+								</div>
+							</figure>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<!-- /fotos proyectos -->
+
+	<!-- spacer section:stats -->
+	<section id="testimonials2" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
+		<div class="container">
+
+			<div class="row mar-bot40">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="section-header">
+						<h1 class="section-heading animated" data-animation="bounceInUp">NORMAS</h1>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row align-center mar-bot40">
+				<div class="col-md-3">
+					<div class="team-member">
+						<figure class="member-photo"><img src="img/team/logo_api.jpg" alt="" /></figure>
+						<div class="team-detail">
+							<h4>API es la principal asociaci&oacute;n comercial de los EE. UU., representando cerca de
+								400 corporaciones implicadas en la producci&oacute;n, el refinamiento, la
+								distribuci&oacute;n, y muchos otros aspectos de la industria del petr&oacute;leo y del
+								gas natural.</h4>
 						</div>
 					</div>
-						
+				</div>
+				<div class="col-md-3">
+					<div class="team-member">
+						<figure class="member-photo"><img src="img/team/logo_asme.jpg" alt="" /></figure>
+						<div class="team-detail">
+							<h4>ASME (American Society of Mechanical Engineers - Sociedad Americana de Ingenieros
+								Mec&aacute;nicos). Es una asociaci&oacute;n profesional, que adem&aacute;s ha generado
+								un c&oacute;digo de dise&ntilde;o, construcci&oacute;n, inspecci&oacute;n y pruebas para
+								equipos. Entre otros, calderas y recipientes a presi&oacute;n. Este c&oacute;digo tiene
+								aceptaci&oacute;n mundial y es usado en todo el mundo. </h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="team-member">
+						<figure class="member-photo"><img src="img/team/logo_tema.jpg" alt="" /></figure>
+						<div class="team-detail">
+							<h4>TEMA (The Tubular Exchanger Manufacturers Association) ha alcanzado la aceptaci&oacute;n
+								mundial como la autoridad en dise&ntilde;o mec&aacute;nico del intercambiador de calor
+								de coraza y tubos.</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="team-member">
+						<figure class="member-photo"> <img src="img/team/logo_nfpa" alt="" /></figure>
+
+						<div class="team-detail">
+							<h4>El sistema de desarrollo de los c&oacute;digos y normas de la NFPA es un proceso abierto
+								basado en el consenso que ha producido algunos de los m&aacute;s referenciados
+								materiales en la industria de la protecci&oacute;n contra incendios, incluyendo el
+								C&oacute;digo El&eacute;ctrico Nacional, el C&oacute;digo de Seguridad Humana, el
+								C&oacute;digo Uniforme contra Incendios, y el C&oacute;digo Nacional de Alarmas de
+								Incendios</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="team-member">
+						<figure class="member-photo"><img src="img/team/logo_iram.jpg" alt="" /></figure>
+						<div class="team-detail">
+							<h4>IRAM lidera los comit&eacute;s t&eacute;cnicos nacionales que analizan los documentos en
+								estudio, canaliza las propuestas nacionales, fija la posici&oacute;n de Argentina ante
+								estos organismos y est&aacute; presente en la conducci&oacute;n de varios de los
+								comit&eacute;s t&eacute;cnicos internacionales</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 
 	</section>
-		
-		<!-- section works -->
-		<section id="section-clientes" class="section appear clearfix">
-			<div class="container">
-				
-				<div class="row mar-bot40">
-					<div class="col-md-offset-3 col-md-6">
-						<div class="section-header">
-							<h2 class="section-heading animated" data-animation="bounceInUp">Clientes</h2>							
-						</div>
+
+	<!-- section works -->
+	<section id="section-clientes" class="section appear clearfix">
+		<div class="container">
+
+			<div class="row mar-bot40">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="section-header">
+						<h2 class="section-heading animated" data-animation="bounceInUp">Clientes</h2>
 					</div>
 				</div>
-					
-                        <div class="row">                       
-                          <div class="col-md-12">
-                            <div >
-                              <div class="portfolio-items isotopeWrapper clearfix" id="3">
-							  
-                                <article class="col-md-4 isotopeItem webdesign">
-									<div class="portfolio-item">
-										<img src="img/clientes/aesa.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-											
-											
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem photography">
-									<div class="portfolio-item">
-										<img src="img/clientes/cartellone.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-								
-
-                                <article class="col-md-4 isotopeItem photography">
-									<div class="portfolio-item">
-										<img src="img/clientes/flowserve.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem print">
-									<div class="portfolio-item">
-										<img src="img/clientes/gelvez.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem photography">
-									<div class="portfolio-item">
-										<img src="img/clientes/insercon.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-											
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem webdesign">
-									<div class="portfolio-item">
-										<img src="img/clientes/meulen.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-											
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem print">
-									<div class="portfolio-item">
-										<img src="img/clientes/pecom.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem photography">
-									<div class="portfolio-item">
-										<img src="img/clientes/red_cordoba.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem print">
-									<div class="portfolio-item">
-										<img src="img/clientes/tomio.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-											
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-				<article class="col-md-4 isotopeItem print">
-									<div class="portfolio-item">
-										<img src="img/clientes/valyser.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-											
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-                                </div>
-                                        
-							</div>
-                                     
-
-							</div>
-                        </div>
-				
 			</div>
-		</section>		
 
-		<!-- contact -->
-		<section id="section-contact" class="section appear clearfix">
-			<div class="container">
-				
-				<div class="row mar-bot40">
-					<div class="col-md-offset-3 col-md-6">
-						<div class="section-header">
-							<h2 class="section-heading animated" data-animation="bounceInUp">Cont&aacute;tenos</h2>
+			<div class="row">
+				<div class="col-md-12">
+					<div>
+						<div class="portfolio-items isotopeWrapper clearfix" id="3">
+
+							<article class="col-md-4 isotopeItem webdesign">
+								<div class="portfolio-item">
+									<img src="img/clientes/aesa.jpg" alt="" />
+									<div class="portfolio-desc align-center">
+										<div class="folio-info">
+
+
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="col-md-4 isotopeItem photography">
+								<div class="portfolio-item">
+									<img src="img/clientes/cartellone.jpg" alt="" />
+									<div class="portfolio-desc align-center">
+										<div class="folio-info">
+
+										</div>
+									</div>
+								</div>
+							</article>
+
+
+							<article class="col-md-4 isotopeItem photography">
+								<div class="portfolio-item">
+									<img src="img/clientes/flowserve.jpg" alt="" />
+									<div class="portfolio-desc align-center">
+										<div class="folio-info">
+
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="col-md-4 isotopeItem print">
+								<div class="portfolio-item">
+									<img src="img/clientes/gelvez.jpg" alt="" />
+									<div class="portfolio-desc align-center">
+										<div class="folio-info">
+
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="col-md-4 isotopeItem photography">
+								<div class="portfolio-item">
+									<img src="img/clientes/insercon.jpg" alt="" />
+									<div class="portfolio-desc align-center">
+										<div class="folio-info">
+
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="col-md-4 isotopeItem webdesign">
+								<div class="portfolio-item">
+									<img src="img/clientes/meulen.jpg" alt="" />
+									<div class="portfolio-desc align-center">
+										<div class="folio-info">
+
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="col-md-4 isotopeItem print">
+								<div class="portfolio-item">
+									<img src="img/clientes/pecom.jpg" alt="" />
+									<div class="portfolio-desc align-center">
+										<div class="folio-info">
+
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="col-md-4 isotopeItem photography">
+								<div class="portfolio-item">
+									<img src="img/clientes/red_cordoba.jpg" alt="" />
+									<div class="portfolio-desc align-center">
+										<div class="folio-info">
+
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="col-md-4 isotopeItem print">
+								<div class="portfolio-item">
+									<img src="img/clientes/tomio.jpg" alt="" />
+									<div class="portfolio-desc align-center">
+										<div class="folio-info">
+
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="col-md-4 isotopeItem print">
+								<div class="portfolio-item">
+									<img src="img/clientes/valyser.jpg" alt="" />
+									<div class="portfolio-desc align-center">
+										<div class="folio-info">
+
+										</div>
+									</div>
+								</div>
+							</article>
 						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- contact -->
+	<section id="section-contact" class="section appear clearfix">
+		<div class="container">
+
+			<div class="row mar-bot40">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="section-header">
+						<h2 class="section-heading animated" data-animation="bounceInUp">Cont&aacute;ctenos</h2>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<div class="cform" id="contact-form">
-							<div id="sendmessage">
-								 El mensaje ha sido enviado. Gracias!
-							</div>
-                            <div id="errormessage"></div>
-							<form action="" method="post" role="form" class="contactForm">
-							  <div class="form-group">
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="cform" id="contact-form">
+						<div id="sendmessage">
+							El mensaje ha sido enviado. Gracias!
+						</div>
+						<div id="errormessage"></div>
+						<form action="" method="post" role="form" class="contactForm">
+							<div class="form-group">
 								<label for="name">Nombre y Apellido</label>
-								<input type="text" name="name" class="form-control" id="name" placeholder="Nombre y Apellido" data-rule="minlen:4" data-msg="por lo menos 4 caracteres" />
+								<input type="text" name="name" class="form-control" id="name"
+									placeholder="Nombre y Apellido" data-rule="minlen:4"
+									data-msg="por lo menos 4 caracteres" />
 								<div class="validation"></div>
-							  </div>
-							  <div class="form-group">
+							</div>
+							<div class="form-group">
 								<label for="email">Email</label>
-								<input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="ingrese un email valido" />
+								<input type="email" class="form-control" name="email" id="email" placeholder="Email"
+									data-rule="email" data-msg="ingrese un email valido" />
 								<div class="validation"></div>
-							  </div>
-							  <div class="form-group">
+							</div>
+							<div class="form-group">
 								<label for="subject">Asunto</label>
-								<input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Ingrese por lo menos 8 caracteres" />
+								<input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto"
+									data-rule="minlen:4" data-msg="Ingrese por lo menos 8 caracteres" />
 								<div class="validation"></div>
-							  </div>
-							  <div class="form-group">
+							</div>
+							<div class="form-group">
 								<label for="message">Mensaje</label>
-								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Aqui escriba por favor el mensaje"></textarea>
+								<textarea class="form-control" name="message" rows="5" data-rule="required"
+									data-msg="Aqui escriba por favor el mensaje"></textarea>
 								<div class="validation"></div>
-							  </div>
-							  
-							  <button type="submit" class="btn btn-theme pull-left">Enviar</button>
-							</form>
+							</div>
 
-						</div>
+							<button type="submit" class="btn btn-theme pull-left">Enviar</button>
+						</form>
+
 					</div>
-					<!-- ./span12 -->
 				</div>
-				
+				<!-- ./span12 -->
 			</div>
-		</section>
-		<!-- map -->
-		<section id="section-map" class="clearfix">
-            
-		</section>
-		
+
+		</div>
+	</section>
+	<!-- map -->
+	<section id="section-map" class="clearfix">
+
+	</section>
+
 	<section id="footer" class="section footer">
 		<div class="container">
 			<div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
 				<div class="col-sm-12 align-center">
-                    <ul class="social-network social-circle">
-                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>				
+					<ul class="social-network social-circle">
+						<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+						<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
 				</div>
 			</div>
 
 			<div class="row align-center copyright">
-					
-                        <div class="credits">
-                            <!-- 
+
+				<div class="credits">
+					<!-- 
                                 All the links in the footer should remain intact. 
                                 You can delete the links only if you purchased the pro version.
                                 Licensing information: https://bootstrapmade.com/license/
                                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Amoeba
                             -->
-                            <a href="https://bootstrapmade.com/">Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                        </div>
-                    </div>
+					<a href="https://bootstrapmade.com/">Bootstrap Themes</a> by <a
+						href="https://bootstrapmade.com/">BootstrapMade</a>
+				</div>
 			</div>
+		</div>
 		</div>
 
 	</section>
-	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>	
+	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
 
 	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/bootstrap.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.isotope.min.js"></script>
 	<script src="js/jquery.nicescroll.min.js"></script>
 	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
-	<script src="js/skrollr.min.js"></script>		
+	<script src="js/skrollr.min.js"></script>
 	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
 	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
 	<script src="js/stellar.js"></script>
 	<script src="js/jquery.appear.js"></script>
-    <script src="js/main.js"></script>
-    <script src="contactform/contactForm.js"></script>
-    
-	</body>
+	<script src="js/main.js"></script>
+	<script src="contactform/contactForm.js"></script>
+
+</body>
+
 </html>

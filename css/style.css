@@ -29,11 +29,31 @@ body {
 }
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: 'Lato', sans-serif;
-}
-h1, h2, h3, h4, h5, h6 {
 	color:#222;
+	font-family: 'Merriweather', sans-serif;
+	letter-spacing: 0.5px; /* espacio entre letras */
+    line-height: 1.6; 
 }
+ h1, h2, h3, h4, h5, h6 {
+	color:#222;	
+	
+	text-shadow:  
+	4px 4px 8px rgba(255, 255, 255, 1),  /* Capa externa más fuerte */
+	-4px -4px 8px rgba(255, 255, 255, 1),  
+	4px -4px 8px rgba(255, 255, 255, 1),  
+	-4px 4px 8px rgba(255, 255, 255, 1);  
+    display: inline-block; /* Para que solo cubra el texto */
+    padding: 2px 5px; /* Espacio alrededor del texto */
+
+}
+.servicios {
+    background-color: rgba(240, 240, 240, .9); /* Gris muy claro */
+    display: inline-block; /* Solo cubre el texto */
+    padding: 5px 15px; /* Espacio alrededor del texto */
+    border-radius: 18px; /* Bordes suavemente redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más difuminada y sutil */
+}
+
 
 h1,h2,h3,h4,h5,h6 {
 	font-style: normal;
@@ -344,6 +364,7 @@ section.section {
 #parallax2{	
 	background-image: url(../img/parallax/empresa.jpg);
 }
+
 #testimonials{	
 	background-image: url(../img/parallax/servicios.jpg);
 }
